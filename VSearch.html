@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="PCM Final Project - Visual Search">
+    <meta name="keywords" content="HTML5, CSS, JavaScript">
+    <meta name="author" content="Rui Jesus">
+    <meta charset="UTF-8">
+    <title>Visual Search</title>
+    <link rel="stylesheet" href="css/VSearchStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="icon" href="css/lupa.png">
+    <script src="js/Image_Processing.js"></script>
+    <script src="js/XML_Database.js"></script>
+    <script src="js/ISearchEngine.js"></script>
+    <script src="js/ISearchEngine_Manager.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/78cca9d96d.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+<header id="header1"></header>
+
+<section id="header">
+    <div class="py-5">
+
+    </div>
+</section>
+
+<section>
+    <div id="title" class="text-center">
+    VISUAL SEARCH
+    </div>
+
+</section>
+
+<section id="query">
+    <div id="searchmenu" class="text-center py-3">
+        <input id="text" type="text" class="ml-4 p-0">
+        <button id="search" onclick="search()" >Search</button>
+    </div>
+    
+</section>
+
+<section id="sugestions">
+    <div id="s1" class="row py-3 mt-3 container col-12 col-sm-10 col-md-8 col-lg-6 mx-auto justify-content-around font-weight-bold">
+        <a id="s2" class="category-choice category-1" onclick="app.searchKeywords('beach');">Beach</a>
+        <a id="s2" class="category-choice category-2" onclick="app.searchKeywords('birthday')">Birthday</a>
+        <a id="s2" class="category-choice category-3" onclick="app.searchKeywords('face')">Face</a>
+        <a id="s2" class="category-choice category-4" onclick="app.searchKeywords('indoor')">Indoor</a>
+        <a id="s2" class="category-choice category-5" onclick="app.searchKeywords('manmade/manmade')">Manmade</a>
+        <a id="s2" class="category-choice category-6" onclick="app.searchKeywords('marriage')">Marriage</a>
+        <a id="s2" class="category-choice category-7" onclick="app.searchKeywords('nature')">Nature</a>
+        <a id="s2" class="category-choice category-8" onclick="app.searchKeywords('no_people')">No People</a>
+        <a id="s2" class="category-choice category-9" onclick="app.searchKeywords('outdoor')">Outdoor</a>
+        <a id="s2" class="category-choice category-10" onclick="app.searchKeywords('party')">Party</a>
+        <a id="s2" class="category-choice category-11" onclick="app.searchKeywords('people')">People</a>
+        <a id="s2" class="category-choice category-12" onclick="app.searchKeywords('snow')">Snow</a>
+        <a id="s2" class="category-choice category-13" onclick="app.searchKeywords('manmade/artificial')">Artificial</a>
+        <a id="s2" class="category-choice category-14" onclick="app.searchKeywords('manmade/urban')">Urban</a>
+    </div>
+</section>
+
+<section id="tools">
+    <div class="row my-3 mx-auto container py-3 px-0 justify-content-around">
+        <button id="red" value="red" onclick="app.searchColor('search', 'red')" class="color"></button>
+        <button id="orange" value="orange" onclick="app.searchColor('search','orange')" class="color"></button>
+        <button id="yellow" value="yellow" onclick="app.searchColor('search','yellow')" class="color"></button>
+        <button id="green" value="green" onclick="app.searchColor('search','green')" class="color"></button>
+        <button id="blue-green" value="blue-green" onclick="app.searchColor('search','blue-green')" class="color"></button>
+        <button id="blue" value="blue" onclick="app.searchColor('search','blue')" class="color"></button>
+        <button id="purple" value="purple" onclick="app.searchColor('search','purple')" class="color"></button>
+        <button id="pink" value="pink" onclick="app.searchColor('search','pink')" class="color"></button>
+        <button id="white" value="white" onclick="app.searchColor('search','white')" class="color"></button>
+        <button id="grey" value="grey" onclick="app.searchColor('search','grey')" class="color"></button>
+        <button id="black" value="black" onclick="app.searchColor('search','black')" class="color"></button>
+        <button id="brown" value="brown" onclick="app.searchColor('search','brown')" class="color"></button>
+    </div>
+</section>
+
+<section id="visualizacao" >
+    <canvas id="canvas" width="1300" height="1300">
+        Your browser doesn't recognize the canvas element
+    </canvas>
+</section>
+
+<footer>
+    <div class="bg-light py-2">
+        <div class="container text-center">
+          <p class="text-muted mb-0 py-2">© 2023 António & Tomás all rights reserved.</p>
+        </div>
+      </div>
+</footer>
+
+
+<script> 
+    
+    window.onload = main(); 
+
+    let search = () => {
+        app.searchKeywords('search');
+        audio.play();
+    }
+
+
+    const audio = new Audio();
+    audio.src = "audio/mc.wav"
+
+</script>
+</body>
+</html>

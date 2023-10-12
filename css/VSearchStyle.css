@@ -1,0 +1,223 @@
+body{
+    /*background: rgb(180, 180, 180);*/
+    
+    background-image: url(https://cdn.discordapp.com/attachments/905416122126434314/1069271547736498186/transferir.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+#s1{
+    
+    border-radius: 25px;
+    width: 90%;
+    background-color: white;
+}
+
+button{
+    padding: 10px 35px;
+    border-radius: 25px;
+}
+
+#red{
+    background-color: red;
+    border-color: red;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#red:hover{
+    background-color: red;
+    box-shadow: 7px 7px red, -7px -7px rgb(223, 93, 93)
+}
+#red:focus{
+    border: 0;
+}
+
+#orange{
+    background-color: orange;
+    border-color: orange;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#orange:hover{
+    background-color: orange;
+    box-shadow: 7px 7px orange, -7px -7px rgb(248, 192, 87)
+}
+
+#yellow{
+    background-color: yellow;
+    border-color: yellow;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#yellow:hover{
+    background-color: yellow;
+    box-shadow: 7px 7px yellow, -7px -7px rgb(241, 241, 120)
+}
+
+#green{
+    background-color: green;
+    border-color: green;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#green:hover{
+    background-color: green;
+    box-shadow: 7px 7px green, -7px -7px rgb(35, 180, 35)
+}
+
+#blue-green{
+    background-color: #0d98ba;
+    border-color: #0d98ba;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#blue-green:hover{
+    background-color: #0d98ba;
+    box-shadow: 7px 7px #0d98ba, -7px -7px #2b9cb8
+}
+
+#blue{
+    background-color: blue;
+    border-color: blue;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#blue:hover{
+    background-color: blue;
+    box-shadow: 7px 7px blue, -7px -7px rgb(98, 98, 247)
+}
+
+
+#purple{
+    background-color: purple;
+    border-color: purple;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#purple:hover{
+    background-color: purple;
+    box-shadow: 7px 7px purple, -7px -7px rgb(170, 21, 170)
+}
+
+#pink{
+    background-color: pink;
+    border-color: pink;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#pink:hover{
+    background-color: pink;
+    box-shadow: 7px 7px pink, -7px -7px rgb(245, 203, 210)
+}
+
+
+#white{
+    background-color:white;
+    border-color: white;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#white:hover{
+    background-color: white;
+    box-shadow: 7px 7px white, -7px -7px white
+}
+
+#grey{
+    background-color: grey;
+    border-color: grey;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#grey:hover{
+    background-color: grey;
+    box-shadow: 7px 7px grey, -7px -7px rgb(185, 185, 185)
+}
+
+#black{
+    background-color: black;
+    border-color: black;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#black:hover{
+    background-color: black;
+    box-shadow: 7px 7px black, -7px -7px rgb(58, 57, 57)
+}
+
+#brown{
+    background-color: brown;
+    border-color: brown;
+    width: 75px;
+    height: 40px;
+    transition: 0.5s;
+}
+#brown:hover{
+    background-color: brown;
+    box-shadow: 7px 7px brown, -7px -7px rgb(150, 51, 51)
+}
+
+
+
+button:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    border-color: transparent;
+}
+
+input{
+    height: 45px;
+    width: 350px;
+    background-color: white;
+    border-style: none;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#search{
+    height: 45px;
+    border-style: none;
+    border-radius: 25px
+}
+
+canvas{
+    border : hidden;
+    display: block;
+    margin-left : auto;
+    margin-right : auto;
+}
+
+#canvas {
+    width: 85%;
+}
+
+#s2{
+    font-family: sans-serif;
+    color: rgb(184, 180, 180);
+    transition: all .25s;
+    text-decoration: none;
+}
+
+#s2:hover{
+    color: black;
+    letter-spacing: 3px;
+}
+
+#title{
+    font-size: 64px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color:whitesmoke;
+}
